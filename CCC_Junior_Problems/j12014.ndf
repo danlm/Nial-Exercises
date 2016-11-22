@@ -1,0 +1,13 @@
+# Solution -----------------------------------
+
+j12014 is operation angles {(180=sum angles times tally cull angles) pick ['ERROR','EQUILATERAL','ISOCELES','SCALENE']}
+
+# Test data -----------------------------------
+
+a1:=60 70 50;
+a2:=60 75 55;
+
+# Test Execution -----------------------------------
+
+write 'Using' (a1) 'should return SCALENE:' (j12014 a1);
+write 'Using' (a2) 'should return ERROR:' (j12014 a2);
