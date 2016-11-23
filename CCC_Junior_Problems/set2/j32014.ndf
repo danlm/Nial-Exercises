@@ -1,0 +1,14 @@
+# Solution -----------------------------------
+
+j32014 is operation p1 p2 {100 minus sum (p2>p1 sublist p2) link (100 minus sum (p1>p2 sublist p1))}
+
+# Test data -----------------------------------
+
+a1a:=5 6 4 5;
+a1b:=6 6 3 2;
+
+# Test Execution -----------------------------------
+
+write 'Using' (a1a) 'and' (a1b) 'should return' (94 pair 91) ':' (a1a j32014 a1b);
+
+
