@@ -1,0 +1,22 @@
+# Solution -----------------------------------
+
+j12012 is operation limit speed {diff is speed minus limit;
+sum (diff > 0 20 30) pick ['None','$100','$270','$500']}
+
+# Test data -----------------------------------
+
+a1a:=40;
+a1b:=39;
+
+a2a:=100;
+a2b:=131;
+
+a3a:=100;
+a3b:=120;
+
+# Test Execution -----------------------------------
+
+write 'Driving 39 with speed limit 40 - None:' (a1a j12012 a1b);
+write 'Driving 131 with speed limit 100 - $500:' (a2a j12012 a2b);
+write 'Driving 120 with speed limit 100 - $100:' (a3a j12012 a3b);
+

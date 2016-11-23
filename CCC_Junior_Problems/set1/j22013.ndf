@@ -1,0 +1,15 @@
+# Solution -----------------------------------
+
+j22013 is operation sign {(0+allin sign 'IOSHZXN') pick ['NO','YES']}
+
+# Test data -----------------------------------
+
+a1:='SHINS';
+a2:='NOISE';
+
+# Test Execution -----------------------------------
+
+write 'Using' (a1) 'should return YES:' (j22013 a1);
+write 'Using' (a2) 'should return NO:' (j22013 a2);
+
+
