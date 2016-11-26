@@ -1,0 +1,17 @@
+# Solution -----------------------------------
+
+j22014 is operation votes {
+    total is tally (`A findall votes) link tally (`B findall votes);
+    1 + (reduce < total) times not (reduce = total) pick ['Tie','A','B']}
+
+# Test data -----------------------------------
+
+a1:='ABBABB';
+a2:='ABBABA';
+
+# Test Execution -----------------------------------
+
+write 'Using' (a1) 'should return B:' (j22014 a1);
+write 'Using' (a2) 'should return Tie:' (j22014 a2);
+
+
