@@ -1,0 +1,14 @@
+# Solution -----------------------------------
+
+j32013 is operation year {range is year+1 drop tell 10001;
+    first (each (4= tally cull string) range sublist range)}
+
+# Test data -----------------------------------
+
+a1:=1987;
+a2:=999;
+
+# Test Execution -----------------------------------
+
+write 'Using' (a1) 'should return 2013:' (j32013 a1);
+write 'Using' (a2) 'should return 1023:' (j32013 a2);

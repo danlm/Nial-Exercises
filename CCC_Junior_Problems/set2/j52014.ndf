@@ -1,0 +1,17 @@
+# Solution -----------------------------------
+
+j52014 is operation p1 p2 {pairs is p1 eachboth link p2;
+    0+(pairs like each reverse pairs) pick ['bad','good']}
+
+# Test data -----------------------------------
+
+a1a:= "Ada "Alan "Grace "John;
+a1b:= "John "Grace "Alan "Ada;
+
+a2a:= "Rich "Graeme "Michelle "Sandy "Vlado "Ron "Jacob;
+a2b:= "Ron "Vlado "Sandy "Michelle "Rich "Graeme "Jacob;
+
+# Test Execution -----------------------------------
+
+write 'Using' a1a 'and' a1b 'should return good:' (a1a j52014 a1b);
+write 'Using' a2a 'and' a2b 'should return bad:' (a2a j52014 a2b);
